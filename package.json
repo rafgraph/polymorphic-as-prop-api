@@ -1,9 +1,9 @@
 {
-  "name": "rollpkg-example-package",
-  "version": "0.5.7",
-  "description": "Example package for Rollpkg",
-  "main": "dist/rollpkg-example-package.cjs.js",
-  "module": "dist/rollpkg-example-package.esm.js",
+  "name": "polymorphic-as",
+  "version": "0.0.0",
+  "description": "Polymorphic as prop api standard PoC. Brings composability to the polymorphic as prop.",
+  "main": "dist/polymorphic-as.cjs.js",
+  "module": "dist/polymorphic-as.esm.js",
   "types": "dist/index.d.ts",
   "sideEffects": false,
   "scripts": {
@@ -21,17 +21,19 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rafgraph/rollpkg-example-package.git"
+    "url": "git+https://github.com/rafgraph/polymorphic-as-prop-api.git"
   },
   "keywords": [
-    "rollpkg"
+    "polymorphic",
+    "as prop",
+    "react"
   ],
   "author": "Rafael Pedicini <rafael@rafgraph.dev>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rafgraph/rollpkg-example-package/issues"
+    "url": "https://github.com/rafgraph/polymorphic-as-prop-api/issues"
   },
-  "homepage": "https://github.com/rafgraph/rollpkg-example-package#readme",
+  "homepage": "https://github.com/rafgraph/polymorphic-as-prop-api#readme",
   "devDependencies": {
     "@types/react": "^17.0.3",
     "lint-staged": "^10.5.4",

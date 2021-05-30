@@ -1,14 +1,14 @@
 {
-  "name": "rollpkg-example-package-demo",
+  "name": "polymorphic-as-demo",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@radix-ui/react-icons": "^1.0.3",
     "@stitches/react": "^0.1.9",
+    "polymorphic-as": "file:..",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-interactive": "^1.1.1",
-    "rollpkg-example-package": "^0.5.7",
     "use-dark-mode": "^2.3.1"
   },
   "devDependencies": {
@@ -26,7 +26,7 @@
   },
   "scripts": {
     "dev": "npm install --save ../ && npm start",
-    "devCleanup": "npm install --save rollpkg-example-package@latest",
+    "devCleanup": "npm install --save polymorphic-as@latest",
     "deploy": "gh-pages --dist build --message Built-`date +%Y%m%d`-`date +%H%M%S`",
     "predeploy": "npm run devCleanup && npm run lint && npm test -- --watchAll=false && npm run build",
     "lint": "eslint src",

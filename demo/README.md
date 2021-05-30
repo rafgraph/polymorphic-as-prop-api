@@ -1,10 +1,5 @@
-# Demo App for [`rollpkg-example-package`](https://github.com/rafgraph/rollpkg-example-package)
+# Demo App for [`polymorphic-as`](https://github.com/rafgraph/polymorphic-as-prop-api)
 
-Live demo app: https://rollpkg.rafgraph.dev
+Live demo app: https://polymorphic-as.rafgraph.dev
 
-- Built with Create React App
-- Deployed using GitHub Pages, deployed code is in the [`gh-pages` branch](https://github.com/rafgraph/rollpkg-example-package/tree/gh-pages)
-
----
-
-Rollpkg repo: https://github.com/rafgraph/rollpkg
+Open demo in CodeSandbox: https://githubbox.com/rafgraph/polymorphic-as-prop-api/tree/main/demo

@@ -1,2 +1,5 @@
-export { randomRGBColorGenerator } from './randomRGBColorGenerator';
-export { ColorBlock } from './ColorBlock';
+export const polymorphicAsArrayUtil = () => {};
+
+export const createPolymorphic = () => {};
+
+export const styled = () => {};

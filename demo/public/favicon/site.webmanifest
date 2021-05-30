@@ -1,5 +1,5 @@
 {
-  "name": "rollpkg-example-package",
+  "name": "polymorphic-as",
   "icons": [
     {
       "src": "/favicon/green-grid-144-168-192-512x512.png",
@@ -13,6 +13,7 @@
     },
     {
       "src": "/favicon/green-grid-144-168-192.svg",
+      "sizes": "16x16",
       "type": "image/svg+xml"
     }
   ],
