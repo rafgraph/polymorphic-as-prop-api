@@ -1,0 +1,61 @@
+{
+  "name": "rollpkg-example-package",
+  "version": "0.5.7",
+  "description": "Example package for Rollpkg",
+  "main": "dist/rollpkg-example-package.cjs.js",
+  "module": "dist/rollpkg-example-package.esm.js",
+  "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "build": "rollpkg build",
+    "watch": "rollpkg watch",
+    "prepublishOnly": "npm run lint && npm test && npm run build",
+    "lint": "eslint src",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "coverage": "npx live-server coverage/lcov-report",
+    "lintStaged": "lint-staged"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafgraph/rollpkg-example-package.git"
+  },
+  "keywords": [
+    "rollpkg"
+  ],
+  "author": "Rafael Pedicini <rafael@rafgraph.dev>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rafgraph/rollpkg-example-package/issues"
+  },
+  "homepage": "https://github.com/rafgraph/rollpkg-example-package#readme",
+  "devDependencies": {
+    "@types/react": "^17.0.3",
+    "lint-staged": "^10.5.4",
+    "pre-commit": "^1.2.2",
+    "react": "file:demo/node_modules/react",
+    "rollpkg": "^0.5.7",
+    "typescript": "^4.2.3"
+  },
+  "peerDependencies": {
+    "react": ">=16.8"
+  },
+  "pre-commit": "lintStaged",
+  "lint-staged": {
+    "(src/**/*|demo/src/**/*)": [
+      "prettier --write --ignore-unknown"
+    ]
+  },
+  "prettier": "rollpkg/configs/prettier.json",
+  "eslintConfig": {
+    "extends": [
+      "./node_modules/rollpkg/configs/eslint"
+    ]
+  },
+  "jest": {
+    "preset": "rollpkg"
+  }
+}
