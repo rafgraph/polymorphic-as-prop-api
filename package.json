@@ -1,6 +1,6 @@
 {
   "name": "polymorphic-as",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Polymorphic as prop api standard PoC. Brings composability to the polymorphic as prop.",
   "main": "dist/polymorphic-as.cjs.js",
   "module": "dist/polymorphic-as.esm.js",
