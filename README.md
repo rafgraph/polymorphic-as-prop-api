@@ -10,7 +10,7 @@ The idea for this is something that I've been thinking about on and off for a bi
 
 ⚡️ [API ideas](#API-ideas) ⚡️ [Proof of concept npm package](#proof-of-concept-npm-package)
 
-**[Try out the proof of concept in CodeSandbox](https://githubbox.com/rafgraph/polymorphic-as-prop-api/tree/main/demo)**
+**[Try out the proof of concept in CodeSandbox](https://codesandbox.io/s/github/rafgraph/polymorphic-as-prop-api/tree/main/demo?file=/src/PolymorphicAsArrayDemos.tsx)**
 
 ---
 
@@ -180,6 +180,10 @@ The `polymorphic-as` proof of concept npm package exports 3 functions:
 - [`polymorphicAsArrayUtil`](#polymorphicasarrayutil) handles the logic of merging `as` arrays, selecting the `As` to render, and creating the `passThroughAsProp`.
 - [`createPolymorphic`](#createpolymorphic) is a generic create polymorphic function that accepts a default props object.
 - [`styled`](#styled) is a create polymorphic function that composes component styles.
+
+---
+
+**[Try out the proof of concept in CodeSandbox](https://codesandbox.io/s/github/rafgraph/polymorphic-as-prop-api/tree/main/demo?file=/src/PolymorphicAsArrayDemos.tsx)**
 
 ---
 

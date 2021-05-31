@@ -4,17 +4,12 @@
   "private": true,
   "dependencies": {
     "@radix-ui/react-icons": "^1.0.3",
-    "@stitches/react": "^0.1.9",
-    "polymorphic-as": "file:..",
+    "polymorphic-as": "^0.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-interactive": "^1.1.1",
-    "use-dark-mode": "^2.3.1"
+    "react-interactive": "^1.1.2"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.12.0",
-    "@testing-library/react": "^11.2.6",
-    "@testing-library/user-event": "^13.1.8",
     "@types/jest": "^26.0.23",
     "@types/node": "^15.0.1",
     "@types/react": "^17.0.4",
@@ -28,7 +23,7 @@
     "dev": "npm install --save ../ && npm start",
     "devCleanup": "npm install --save polymorphic-as@latest",
     "deploy": "gh-pages --dist build --message Built-`date +%Y%m%d`-`date +%H%M%S`",
-    "predeploy": "npm run devCleanup && npm run lint && npm test -- --watchAll=false && npm run build",
+    "predeploy": "npm run devCleanup && npm run lint && npm run build",
     "lint": "eslint src",
     "start": "react-scripts start",
     "build": "react-scripts build",

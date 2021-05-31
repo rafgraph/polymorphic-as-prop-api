@@ -1,9 +1,17 @@
-import { DarkModeButton } from './ui/DarkModeButton';
-import { GitHubIconLink } from './ui/GitHubIconLink';
-import { styled, globalCss } from './stitches.config';
+import {
+  ButtonDemo,
+  AlertDemo,
+  FormDemo,
+  TextDemo,
+  TopOfPageDemo,
+
+  // PolymorphicAsArrayDemo
+} from './PolymorphicAsArrayDemos';
+import { GitHubIconLink } from './GitHubIconLink';
+import { styled } from 'polymorphic-as';
 
 const AppContainer = styled('div', {
-  maxWidth: '800px',
+  maxWidth: '600px',
   padding: '12px 15px 25px',
   margin: '0 auto',
 });
@@ -19,38 +27,30 @@ const H1 = styled('h1', {
   marginRight: '16px',
 });
 
-const HeaderIconContainer = styled('span', {
-  width: '78px',
-  display: 'inline-flex',
-  justifyContent: 'space-between',
-  gap: '12px',
-});
-
-const InfoContainer = styled('p', {
-  margin: '18px 0',
+const DemoContainer = styled('div', {
+  margin: '30px 0',
 });
 
 export const App = () => {
-  globalCss();
-
   return (
     <AppContainer>
       <HeaderContainer>
         <H1>
-          Polymorphic <code>as</code> prop api standard PoC
+          Polymorphic <code>as</code> array API Demo
         </H1>
-        <HeaderIconContainer>
-          <DarkModeButton />
-          <GitHubIconLink
-            title="GitHub repository for polymorphic as prop api proof of concept"
-            href="https://github.com/rafgraph/polymorphic-as-prop-api"
-          />
-        </HeaderIconContainer>
+        <GitHubIconLink
+          title="GitHub repository for polymorphic as prop api proof of concept"
+          href="https://github.com/rafgraph/polymorphic-as-prop-api"
+        />
       </HeaderContainer>
-      <InfoContainer>
-        This is the demo app for the Polymorphic <code>as</code> prop api
-        standard proof of concept.
-      </InfoContainer>
+      <DemoContainer>
+        <ButtonDemo />
+        <AlertDemo />
+        <FormDemo />
+        <TextDemo />
+        <TopOfPageDemo />
+      </DemoContainer>
+      {/* <PolymorphicAsArrayDemo /> */}
     </AppContainer>
   );
 };

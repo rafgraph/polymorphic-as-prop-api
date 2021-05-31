@@ -1,0 +1,46 @@
+/* normalize behavior on all elements */
+*,
+*::before,
+*::after {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font: inherit;
+  font-weight: inherit;
+  text-align: inherit;
+  line-height: inherit;
+  word-break: inherit;
+  color: inherit;
+  background: transparent;
+}
+
+/* set base styles for the app */
+body {
+  color: rgb(0, 0, 0);
+  font-family: system-ui, 'Helvetica Neue', sans-serif;
+  /* use word-break instead of "overflow-wrap: anywhere" because of Safari support */
+  word-break: break-word;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  box-sizing: border-box;
+  text-size-adjust: none;
+}
+
+/* pass down height: 100% to the #root div */
+body,
+html {
+  height: 100%;
+}
+#root {
+  min-height: 100%;
+  background-color: rgb(240, 240, 240);
+}
+
+code {
+  font-family: monospace;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 0 4px;
+  border-radius: 6px;
+}

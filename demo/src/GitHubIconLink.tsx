@@ -1,38 +1,44 @@
 import * as React from 'react';
 import { Interactive } from 'react-interactive';
 import { GitHubLogoIcon } from '@radix-ui/react-icons';
-import { Button } from './Button';
 
 interface GitHubIconLinkProps {
   href?: string;
   title?: string;
   newWindow?: boolean;
-  css?: React.ComponentProps<typeof Button>['css'];
 }
 
 export const GitHubIconLink: React.VFC<GitHubIconLinkProps> = ({
   newWindow = true,
-  css,
   title,
   ...props
 }) => (
-  <Button
+  <Interactive.A
     {...props}
-    as={Interactive.A}
     title={title}
     aria-label={title}
     target={newWindow ? '_blank' : undefined}
     rel={newWindow ? 'noopener noreferrer' : undefined}
-    focus="boxShadow"
-    css={{
+    style={{
+      color: 'black',
+      outline: 'none',
       display: 'inline-block',
       width: '36px',
       height: '36px',
       padding: '3px',
       margin: '-3px',
       borderRadius: '50%',
-      // cast as any b/c of Stitches bug: https://github.com/modulz/stitches/issues/407
-      ...(css as any),
+    }}
+    hoverStyle={{
+      color: 'hsl(120,100%,33%)',
+      borderColor: 'hsl(120,100%,33%)',
+    }}
+    activeStyle={{
+      color: 'hsl(120,100%,33%)',
+      borderColor: 'hsl(120,100%,33%)',
+    }}
+    focusFromKeyStyle={{
+      boxShadow: '0 0 0 2px hsl(270,85%,60%)',
     }}
   >
     <GitHubLogoIcon
@@ -42,5 +48,5 @@ export const GitHubIconLink: React.VFC<GitHubIconLinkProps> = ({
       // see: https://github.com/radix-ui/icons/issues/73
       style={{ transform: 'scale(1.1278)' }}
     />
-  </Button>
+  </Interactive.A>
 );
