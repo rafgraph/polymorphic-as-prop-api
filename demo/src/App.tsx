@@ -4,8 +4,6 @@ import {
   FormDemo,
   TextDemo,
   TopOfPageDemo,
-
-  // PolymorphicAsArrayDemo
 } from './PolymorphicAsArrayDemos';
 import { GitHubIconLink } from './GitHubIconLink';
 import { styled } from 'polymorphic-as';
@@ -50,7 +48,6 @@ export const App = () => {
         <TextDemo />
         <TopOfPageDemo />
       </DemoContainer>
-      {/* <PolymorphicAsArrayDemo /> */}
     </AppContainer>
   );
 };

@@ -3,6 +3,8 @@ import {
   polymorphicAsArrayUtil,
   createPolymorphic,
   styled,
+} from 'polymorphic-as';
+import type {
   PolymorphicAsArrayForwardRefComponent,
   PolymorphicAsArrayProps,
 } from 'polymorphic-as';
